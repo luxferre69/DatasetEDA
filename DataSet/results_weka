@@ -1,0 +1,55 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     <eda-dataset>-weka.filters.supervised.instance.SMOTE-C0-K5-P1000.0-S1-weka.filters.supervised.instance.SpreadSubsample-M2.0-X0.0-S1
+Instances:    8745
+Attributes:   12
+              scl_mean
+              scl_correlation
+              scr_mean
+              scr_std
+              eda_slope
+              eda_greater_v
+              eda_difference
+              eda_mean
+              eda_variance
+              eda_skewness
+              eda_kurtosis
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 3.66 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        8461               96.7524 %
+Incorrectly Classified Instances       284                3.2476 %
+Kappa statistic                          0.9261
+Mean absolute error                      0.0904
+Root mean squared error                  0.1718
+Relative absolute error                 20.3379 %
+Root relative squared error             36.436  %
+Total Number of Instances             8745     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,987    0,071    0,965      0,987    0,976      0,927    0,995     0,998     0
+                 0,929    0,013    0,972      0,929    0,950      0,927    0,995     0,990     1
+Weighted Avg.    0,968    0,052    0,968      0,968    0,967      0,927    0,995     0,995     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 5753   77 |    a = 0
+  207 2708 |    b = 1
+
